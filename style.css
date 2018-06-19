@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room {
+  position: relative;
+  display: block;
+  width: 1379px;
+  height: 742px;
+  background-image: url("room0/room.png");
+}
+.item {
+  cursor: pointer;
+  position: absolute;
+  transform-origin: center;
+}
+.roll {
+  animation: item-roll 1s;
+}
+
+@keyframes item-roll {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
