@@ -11,13 +11,15 @@ body {
   display: block;
   width: 1379px;
   height: 742px;
-  background-image: url("room0/room.png");
+  background-image: url("images/room0.png");
 }
+
 .item {
   cursor: pointer;
   position: absolute;
   transform-origin: center;
 }
+
 .roll {
   animation: item-roll 1s;
 }
