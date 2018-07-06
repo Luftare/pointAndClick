@@ -20,6 +20,7 @@ const rooms = [
     items: [
       {
         src: "images/key.png",
+        pickable: true,
         left: 1190,
         top: 446.5,
         width: 64,
@@ -51,6 +52,11 @@ function setupRoom(room) {
     if (item.src) {
       div.style.backgroundImage = `url('${item.src}')`;
     }
+    div.addEventListener("click", () => {
+      if (item.pickable) {
+        div.classList.add('picked-up');
+      }
+    });
     document.querySelector(".room").append(div);
   });
 }

@@ -18,6 +18,15 @@ body {
   cursor: pointer;
   position: absolute;
   transform-origin: center;
+  transition: all 2s;
+}
+
+.picked-up {
+  opacity: 0;
+  top: 100% !important;
+  left: 50% !important;
+  transform: rotate(180deg);
+  pointer-events: none;
 }
 
 .roll {
